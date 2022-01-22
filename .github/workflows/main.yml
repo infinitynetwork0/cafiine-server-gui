@@ -36,5 +36,7 @@ jobs:
           echo test, and deploy your project.
           msbuild
 
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.3.1
+      - uses: actions/upload-artifact@v2
+        with:
+            name: my-artifact
+            path: /home/runner/work/cafiine-server-gui/cafiine-server-gui/CafiineServerUI/bin/Debug/
